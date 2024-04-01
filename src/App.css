@@ -43,7 +43,7 @@
     box-shadow: 5px 10px #888888;
     padding: 1rem;
     border-radius: 4px 6px 2px 8px;
-    transform: rotate(3deg);
+    /* transform: rotate(3deg); */
     cursor: pointer;
 }
 

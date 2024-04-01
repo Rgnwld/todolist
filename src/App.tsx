@@ -53,6 +53,7 @@ function App() {
                                 setTodoList([...newTodoList]);
                             }}
                             className="item"
+                            style={{ transform: `rotate(${Math.floor(Math.random() * 20) - 10}deg)` }}
                         >
                             {e.name}
                         </div>
@@ -83,6 +84,7 @@ function App() {
                                 setDoingList([...newDoingList]);
                             }}
                             className="item"
+                            style={{ transform: `rotate(${Math.floor(Math.random() * 20) - 10}deg)` }}
                         >
                             {e.name}
                         </div>
@@ -113,6 +115,7 @@ function App() {
                                 setDoneList([...newList]);
                             }}
                             className="item"
+                            style={{ transform: `rotate(${Math.floor(Math.random() * 20) - 10}deg)` }}
                         >
                             {e.name}
                         </div>
