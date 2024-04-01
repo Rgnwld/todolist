@@ -1,38 +1,71 @@
 .App {
-  text-align: center;
+    display: flex;
+    background-color: var(--bg);
+    color: var(--fg);
+    /* padding: 1rem; */
+    height: 100%;
+    width: 100%;
+
+    font-family: 'Gaegu', sans-serif;
+    font-weight: 700;
+
+    font-size: 1.3rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    border-right: solid 4px var(--fg-transparent);
+    width: 100%;
+    gap: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App > div > h1 {
+    border-bottom: 4px solid var(--fg);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App > div > .listTable {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.App > div > .listTable > .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    background-color: var(--fg);
+    color: var(--bg);
+    /* border: var(--fg) 2px solid; */
+    box-shadow: 5px 10px #888888;
+    padding: 1rem;
+    border-radius: 4px 6px 2px 8px;
+    transform: rotate(3deg);
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App > div:last-child {
+    border-right: none;
+}
+
+.App .addTask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 2rem;
+    /* border-radius: 4px; */
+    border-radius: 5rem;
+    border: var(--fg) 2px solid;
+}
+
+.App .addTask:hover {
+    background: var(--fg);
+    color: var(--bg);
+    cursor: pointer;
+    border: var(--fg) 2px solid;
 }
